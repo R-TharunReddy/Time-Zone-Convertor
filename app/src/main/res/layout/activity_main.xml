@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8E5CE"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:text="Time Zone Converter"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter time (HH:mm:ss)"
+        app:hintTextColor="#45474B">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="time"
+            android:padding="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewOriginalTimeZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Select Original Time Zone"
+        android:textColor="#45474B"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerOriginalTimeZones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewTargetTimeZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Select Target Time Zone"
+        android:textColor="#45474B"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerTargetTimeZones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#379777"
+        android:padding="10dp"
+        android:text="Convert Time"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewOriginalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Original Time:"
+        android:textColor="#45474B"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewConvertedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converted Time:"
+        android:textColor="#45474B"
+        android:textSize="18sp" />
+
+</LinearLayout>
